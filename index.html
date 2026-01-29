@@ -3,43 +3,60 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name - Projects</title>
-  <style>
-    body { font-family: system-ui, Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 16px; }
-    header { margin-bottom: 24px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-    .card { border: 1px solid #ddd; border-radius: 10px; padding: 16px; }
-    .card h3 { margin: 0 0 8px; }
-    .meta { color: #555; font-size: 0.95rem; }
-    a { text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <title>Timothy Snyder - Projects</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
   <header>
     <h1>Timothy Snyder</h1>
-    <p class="meta">Unity / Full Stack - Personal projects and notes.</p>
-    <p>
+    <p class="subtitle">Unity / Full Stack - Personal projects and notes.</p>
+
+    <p class="intro">
       Hi, this is my project portfolio.<br>
       It showcases videos of shipped work projects alongside links to personal and experimental builds.<br>
-      I’ve worked extensively with emerging technologies, where rapid prototyping, iteration, and problem-solving under uncertainty are core to the process.<br>
+      I have worked extensively with emerging technologies, where rapid prototyping, iteration, and problem-solving under uncertainty are core to the process.<br>
       A homeschooler through and through, I learn best by applying concepts directly in real systems.
     </p>
   </header>
 
   <h2>Projects</h2>
+
   <div class="grid">
-    <div class="card">
-      <h3><a href="https://github.com/YOUR_USERNAME/PROJECT_REPO">Project Title</a></h3>
+    <div class="card" data-modal="project1">
+      <h3>Project Title</h3>
       <p>1-2 sentences describing what it is and why it exists.</p>
       <p class="meta">Unity, C#, UIToolkit</p>
     </div>
 
-    <div class="card">
-      <h3><a href="https://github.com/YOUR_USERNAME/PROJECT_REPO_2">Project Title 2</a></h3>
+    <div class="card" data-modal="project2">
+      <h3>Project Title 2</h3>
       <p>Short description.</p>
       <p class="meta">C#, HID, Tools</p>
     </div>
   </div>
+
+  <!-- Modal -->
+  <div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal">
+      <button class="close" id="modalClose">X</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- Modal content templates -->
+  <template id="project1">
+    <h3>Project Title</h3>
+    <p>Longer description of the project.</p>
+    <p><a href="https://github.com/YOUR_USERNAME/PROJECT_REPO" target="_blank">View on GitHub</a></p>
+  </template>
+
+  <template id="project2">
+    <h3>Project Title 2</h3>
+    <p>Details, goals, and technical notes.</p>
+    <p><a href="https://github.com/YOUR_USERNAME/PROJECT_REPO_2" target="_blank">View on GitHub</a></p>
+  </template>
+
+  <script src="js/modal.js"></script>
 </body>
 </html>
