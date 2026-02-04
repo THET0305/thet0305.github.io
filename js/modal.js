@@ -23,3 +23,11 @@ overlay.addEventListener("click", e => {
     overlay.classList.add("hidden");
   }
 });
+
+function stopModalVideos() {
+  content.querySelectorAll("video").forEach(video => {
+    video.pause();
+    video.currentTime = 0;
+  });
+}
+
