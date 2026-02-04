@@ -15,11 +15,13 @@ document.querySelectorAll(".card").forEach(card => {
 });
 
 closeBtn.addEventListener("click", () => {
+  stopModalVideos();
   overlay.classList.add("hidden");
 });
 
 overlay.addEventListener("click", e => {
   if (e.target === overlay) {
+    stopModalVideos();
     overlay.classList.add("hidden");
   }
 });
