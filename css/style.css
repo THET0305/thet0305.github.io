@@ -87,6 +87,13 @@ h1, h2, h3 {
   display: block;
 }
 
+.modal-content img {
+  width: 100%;
+  height: auto;         /* preserves aspect ratio */
+  max-height: 90vh;     /* prevents overflow */
+  display: block;
+}
+
 .modal a {
   color: var(--accent);
 }
