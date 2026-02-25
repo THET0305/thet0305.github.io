@@ -1,59 +1,151 @@
-<section aria-labelledby="personal-projects">
-  <h2 id="personal-projects">Personal Projects</h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Timothy Snyder - Projects</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
-  <div class="projects-columns">
+  <header>
+    <h1>Timothy Snyder</h1>
+    <p class="subtitle">Unity / Full Stack - Personal projects and notes.</p>
 
-    <!-- LEFT COLUMN -->
-    <div class="project-column">
-      <h3 class="column-title">AI Projects</h3>
+    <p class="intro">
+      Hi, this is my project portfolio. It showcases videos of shipped work projects alongside links to personal and experimental builds. I have worked extensively with emerging technologies, where rapid prototyping, iteration, and problem-solving under uncertainty are core to the process.
+      A homeschooler through and through, I learn best by applying concepts directly in real systems.
+    </p>
+  </header>
 
-      <div class="card" data-modal="siteScout">
-        <h4>SiteScout</h4>
-        <p>A lightweight project exploring discovery, tracking, and presentation of site or content signals.</p>
-        <p class="meta">Python, Edge AI, WebApp</p>
+  <main>
+
+    <!-- Joy/Komatsu -->
+    <section aria-labelledby="joy-komatsu-projects">
+      <h2 id="joy-komatsu-projects">Joy/Komatsu Projects</h2>
+
+      <p class="disclaimer">
+        <i>
+          Disclaimer: This section only includes material that can be found publicly. I do not claim ownership or rights to these projects.
+          This work is shown solely to showcase projects I have contributed to. Some items were prototypes or exploratory efforts that were
+          shelved and are not publicly available.
+        </i>
+      </p>
+
+      <div class="grid">
+        <div class="card" data-modal="ugsrContinuousMiner">
+          <h3>UGSR Continuous Miner Simulator</h3>
+          <p>Underground soft rock simulator experience focused on continuous miner operation and training.</p>
+          <p class="meta">Unity, Simulation, Training, Hardware Integration</p>
+        </div>
+
+        <div class="card" data-modal="ugsrBatteryHauler">
+          <h3>UGSR Battery Hauler Simulator</h3>
+          <p>Underground soft rock simulator experience centered on battery hauler operator training scenarios.</p>
+          <p class="meta">Unity, Simulation, Training, Hardware Integration</p>
+        </div>
+
+        <div class="card" data-modal="projectGoldMiner">
+          <h3>Project Gold Miner (Exploratory Mobile Game)</h3>
+          <p>Exploratory prototype investigating mobile gameplay to gamify high-level mining concepts.</p>
+          <p class="meta">Unity, Mobile, Prototyping, Gamification</p>
+        </div>
       </div>
+    </section>
 
-      <div class="card" data-modal="flaskEmotionAI">
-        <h4>Flask Emotion Detection AI</h4>
-        <p>A Flask-based experiment for emotion detection and web presentation.</p>
-        <p class="meta">Python, Flask, WatsonX AI</p>
+    <!-- IVE Info -->
+    <section aria-labelledby="ive-info">
+      <h2 id="ive-info">Interactive Virtual Experiences</h2>
+      <p>
+        Interactive Virtual Experiences (IVE) was an exploratory partnership founded by my brother and me to prototype and evaluate interactive software ideas. While none of the concepts moved forward into production, the resulting prototypes were retained and are now showcased as personal projects.
+      </p>
+      <p>
+        <a href="https://interactivevirtualexperiences.com/" target="_blank" rel="noopener">
+          Interactive Virtual Experiences
+        </a>
+      </p>
+    </section>
+
+    <!-- Personal Projects -->
+    <section aria-labelledby="personal-projects">
+      <h2 id="personal-projects">Personal Projects</h2>
+
+      <div class="projects-columns">
+
+        <!-- AI COLUMN -->
+        <div class="project-column">
+          <h3 class="column-title">AI Projects</h3>
+
+          <div class="card" data-modal="siteScout">
+            <h4>SiteScout</h4>
+            <p>Agentic AI-powered lead generation and website auditing tool.</p>
+            <p class="meta">Python, Edge AI, WebApp</p>
+          </div>
+
+          <div class="card" data-modal="flaskEmotionAI">
+            <h4>Flask Emotion Detection AI</h4>
+            <p>Flask-based AI emotion detection web application.</p>
+            <p class="meta">Python, Flask, WatsonX AI</p>
+          </div>
+        </div>
+
+        <!-- AR COLUMN -->
+        <div class="project-column">
+          <h3 class="column-title">AR Projects</h3>
+
+          <div class="card" data-modal="arBowling">
+            <h4>AR Bowling</h4>
+            <p>Android-based AR bowling game using gesture interaction.</p>
+            <p class="meta">Unity, AR, ARToolkit</p>
+          </div>
+
+          <div class="card" data-modal="arAtsteroid">
+            <h4>AR Atsteroid-Like Shooter</h4>
+            <p>Asteroids-inspired AR shooter built in immersive 3D space.</p>
+            <p class="meta">Unity, AR, ARToolkit</p>
+          </div>
+        </div>
+
+        <!-- WEBGL COLUMN -->
+        <div class="project-column">
+          <h3 class="column-title">WebGL Projects</h3>
+
+          <div class="card" data-modal="asicWorkbench">
+            <h4>IVE - ASIC Workbench</h4>
+            <p>WebGL-based interactive 3D hardware training prototype.</p>
+            <p class="meta">Unity, WebGL, Training Tool</p>
+          </div>
+
+          <div class="card" data-modal="questBoard">
+            <h4>QuestBoard</h4>
+            <p>REST API backend integrated with Unity WebGL frontend.</p>
+            <p class="meta">Unity, API Dev, WebGL, Firebase</p>
+            <p><i><u>Important (2026): Known UI text refresh issue. Core functionality works as expected.</u></i></p>
+          </div>
+        </div>
+
       </div>
+    </section>
+
+  </main>
+
+  <!-- Modal -->
+  <div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close" id="modalClose" aria-label="Close">X</button>
+      <div id="modalContent"></div>
     </div>
-
-    <!-- CENTER COLUMN -->
-    <div class="project-column">
-      <h3 class="column-title">AR Projects</h3>
-
-      <div class="card" data-modal="arBowling">
-        <h4>AR Bowling</h4>
-        <p>Android-based AR bowling game using gesture interaction.</p>
-        <p class="meta">Unity, AR, ARToolkit</p>
-      </div>
-
-      <div class="card" data-modal="arAtsteroid">
-        <h4>AR Atsteroid-Like Shooter</h4>
-        <p>Asteroids-inspired AR space shooter built in 3D spatial space.</p>
-        <p class="meta">Unity, AR, ARToolkit</p>
-      </div>
-    </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="project-column">
-      <h3 class="column-title">WebGL Projects</h3>
-
-      <div class="card" data-modal="asicWorkbench">
-        <h4>IVE - ASIC Workbench</h4>
-        <p>WebGL-based interactive training proof of concept.</p>
-        <p class="meta">Unity, WebGL, Training Tool</p>
-      </div>
-
-      <div class="card" data-modal="questBoard">
-        <h4>QuestBoard</h4>
-        <p>REST API backend integrated with Unity WebGL frontend.</p>
-        <p class="meta">Unity, API Dev, WebGL, Firebase</p>
-        <p><i><u>Important (2026): Known UI text refresh issue. Core functionality works as expected.</u></i></p>
-      </div>
-    </div>
-
   </div>
-</section>
+
+  <script src="js/modal.js"></script>
+
+</body>
+
+<footer class="site-footer">
+  <p>
+    © 2026 Tim Snyder.<br>
+    All content on this site is shared for demonstration and portfolio purposes only.<br>
+    Please do not copy, redistribute, or reuse without permission.
+  </p>
+</footer>
+</html>
