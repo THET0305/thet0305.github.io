@@ -112,3 +112,29 @@ h1, h2, h3 {
 .hidden {
   display: none;
 }
+
+.projects-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.project-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.column-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projects-columns {
+    grid-template-columns: 1fr;
+  }
+}
