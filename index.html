@@ -19,30 +19,26 @@
   </header>
 
   <main>
-
-    <!-- Joy/Komatsu -->
     <section aria-labelledby="joy-komatsu-projects">
       <h2 id="joy-komatsu-projects">Joy/Komatsu Projects</h2>
 
       <p class="disclaimer">
-        <i>
-          Disclaimer: This section only includes material that can be found publicly. I do not claim ownership or rights to these projects.
-          This work is shown solely to showcase projects I have contributed to. Some items were prototypes or exploratory efforts that were
-          shelved and are not publicly available.
-        </i>
+        <i>Disclaimer: This section only includes material that can be found publicly. I do not claim ownership or rights to these projects.
+        This work is shown solely to showcase projects I have contributed to. Some items were prototypes or exploratory efforts that were
+        shelved and are not publicly available.</i>
       </p>
 
       <div class="grid">
         <div class="card" data-modal="ugsrContinuousMiner">
           <h3>UGSR Continuous Miner Simulator</h3>
           <p>Underground soft rock simulator experience focused on continuous miner operation and training.</p>
-          <p class="meta">Unity, Simulation, Training, Hardware Integration</p>
+          <p class="meta">Unity, Simulation, Training, Hardware Intergration</p>
         </div>
 
         <div class="card" data-modal="ugsrBatteryHauler">
           <h3>UGSR Battery Hauler Simulator</h3>
           <p>Underground soft rock simulator experience centered on battery hauler operator training scenarios.</p>
-          <p class="meta">Unity, Simulation, Training, Hardware Integration</p>
+          <p class="meta">Unity, Simulation, Training, Hardware Intergration</p>
         </div>
 
         <div class="card" data-modal="projectGoldMiner">
@@ -53,80 +49,76 @@
       </div>
     </section>
 
-    <!-- IVE Info -->
-    <section aria-labelledby="ive-info">
-      <h2 id="ive-info">Interactive Virtual Experiences</h2>
-      <p>
-        Interactive Virtual Experiences (IVE) was an exploratory partnership founded by my brother and me to prototype and evaluate interactive software ideas. While none of the concepts moved forward into production, the resulting prototypes were retained and are now showcased as personal projects.
-      </p>
-      <p>
-        <a href="https://interactivevirtualexperiences.com/" target="_blank" rel="noopener">
-          Interactive Virtual Experiences
-        </a>
-      </p>
+    <section aria-labelledby="ive-projects">
+      <h2 id="ive-projects">Interactive Virtual Experiences</h2>      
+        <p>
+          Interactive Virtual Experiences (IVE) was an exploratory partnership founded by my brother and me to prototype and evaluate interactive software ideas. While none of the concepts moved forward into production, the resulting prototypes were retained and are now showcased as personal projects. These can be found on the IVE website.
+        </p>
+        <p>
+          <a href="https://interactivevirtualexperiences.com/" target="_blank" rel="noopener">Interactive Virtual Experiences</a>
+        </p>
     </section>
-
-    <!-- Personal Projects -->
+    
+    <!-- UPDATED: Personal Projects split into 3 columns (AI / AR / WebGL) -->
     <section aria-labelledby="personal-projects">
       <h2 id="personal-projects">Personal Projects</h2>
 
       <div class="projects-columns">
 
-        <!-- AI COLUMN -->
+        <!-- LEFT COLUMN (unchanged content) -->
         <div class="project-column">
           <h3 class="column-title">AI Projects</h3>
 
           <div class="card" data-modal="siteScout">
             <h4>SiteScout</h4>
-            <p>Agentic AI-powered lead generation and website auditing tool.</p>
-            <p class="meta">Python, Edge AI, WebApp</p>
+            <p>A lightweight project exploring discovery, tracking, and presentation of site or content signals.</p>
+            <p class="meta">Python, Edge AI, WebApp, Learning Project</p>
           </div>
 
           <div class="card" data-modal="flaskEmotionAI">
             <h4>Flask Emotion Detection AI</h4>
-            <p>Flask-based AI emotion detection web application.</p>
-            <p class="meta">Python, Flask, WatsonX AI</p>
+            <p>A Flask-based experiment for emotion detection, inference, and simple web presentation.</p>
+            <p class="meta">Python, Flask, WatsonX AI, Learning Project</p>
           </div>
         </div>
 
-        <!-- AR COLUMN -->
+        <!-- CENTER COLUMN -->
         <div class="project-column">
           <h3 class="column-title">AR Projects</h3>
 
           <div class="card" data-modal="arBowling">
             <h4>AR Bowling</h4>
-            <p>Android-based AR bowling game using gesture interaction.</p>
-            <p class="meta">Unity, AR, ARToolkit</p>
+            <p>Augmented reality bowling prototype exploring spatial interaction.</p>
+            <p class="meta">Unity, AR</p>
           </div>
 
           <div class="card" data-modal="arAtsteroid">
             <h4>AR Atsteroid-Like Shooter</h4>
-            <p>Asteroids-inspired AR shooter built in immersive 3D space.</p>
-            <p class="meta">Unity, AR, ARToolkit</p>
+            <p>Augmented reality shooter prototype built for immersive experimentation.</p>
+            <p class="meta">Unity, AR</p>
           </div>
         </div>
 
-        <!-- WEBGL COLUMN -->
+        <!-- RIGHT COLUMN -->
         <div class="project-column">
           <h3 class="column-title">WebGL Projects</h3>
 
           <div class="card" data-modal="asicWorkbench">
             <h4>IVE - ASIC Workbench</h4>
-            <p>WebGL-based interactive 3D hardware training prototype.</p>
-            <p class="meta">Unity, WebGL, Training Tool</p>
+            <p>A WebGL-based interactive training tool prototype for the Crypto-Currency market.</p>
+            <p class="meta">Unity, WebGL, Training Tool, Prototype</p>
           </div>
 
           <div class="card" data-modal="questBoard">
             <h4>QuestBoard</h4>
-            <p>REST API backend integrated with Unity WebGL frontend.</p>
-            <p class="meta">Unity, API Dev, WebGL, Firebase</p>
-            <p><i><u>Important (2026): Known UI text refresh issue. Core functionality works as expected.</u></i></p>
+            <p>A project focused on creating a back-end API interacting with a Unity WebGL front-end.</p>
+            <p class="meta">Unity, API Backend, Learning Project</p>
+            <p><i><u>Important (2026): There is a known issue in the Unity interface where the quest state text does not update correctly. All other quest functionality works as expected. This will be addressed when time permits.</u></i></p>
           </div>
         </div>
 
       </div>
     </section>
-
   </main>
 
   <!-- Modal -->
@@ -137,8 +129,143 @@
     </div>
   </div>
 
-  <script src="js/modal.js"></script>
+  <!-- Joy/Komatsu modal templates -->
+  <template id="ugsrContinuousMiner">
+    <h3 id="modalTitle">UGSR Continuous Miner Simulator</h3>
+    <p>
+      <p>The ProMiner Operator Training Simulator was my first Unity3D project. Released in South Africa in 2009, it was created to help address illiteracy challenges in technical training. Since then, the simulator has gained customers worldwide and has also been used extensively as a marketing tool at industry trade shows.</p>
+      <p>As a founding—and ultimately the final—member of the original development team, I have worked across every aspect of the project over the years, contributing to its long-term growth, maintenance, and evolution.</p>
+      <p><b>Project Year: 2009 - Present</b></p>
+    </p>
+    <div class="modal-content">
+      <video controls>
+        <source src="video/ProMinerVideo_1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <p class="meta">Unity, Simulation, Training</p>
+  </template>
 
+  <template id="ugsrBatteryHauler">
+    <h3 id="modalTitle">UGSR Battery Hauler Simulator</h3>
+    <p>
+      <p>Kicked off in 2020, this training simulator began as a rapid prototype that combined a gaming joystick, pedals, and a VR headset within a virtual underground environment, allowing trainees to learn how to operate a Komatsu battery-powered hauler. The prototype was completed in three months and successfully secured management buy-in, leading to its transition into a full production project.</p>
+      <p>I served as the primary developer throughout the project’s evolution, leading development across programming, systems design, 2D art, 3D modeling, audio, and UX. During a short phase of the project, I also worked alongside and mentored a junior developer before returning to primary ownership. As the simulator moved into full production, it was expanded to include a full physical frame, integration with real machine hardware, hand motion tracking, and ongoing feature development.</p>
+      <p><b>Project Year: 2020 - Present</b></p>
+    </p>
+    <div class="modal-content">
+      <video controls>
+        <source src="video/BHSimulatorProject.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <p class="meta">Unity, Simulation, Training</p>
+  </template>
+
+  <template id="projectGoldMiner">
+    <h3 id="modalTitle">Project Gold Miner (Exploratory Mobile Game)</h3>
+    <p>
+      <p>This project was an opportunity for me to explore mobile development while getting hands-on experience with Unity’s Data-Oriented Technology Stack (DOTS) and Entity Component System (ECS).</p>
+      <p>Built for Android and UWP, the project was designed for an audience with little to no background in underground mining. Its goal was to introduce high-level concepts of Continuous Miner operation, while also incorporating light mine and resource management elements to reinforce learning through interaction.</p>
+      <p><b>Project Year: 2019</b></p>
+    </p>
+    <div class="modal-content">
+      <video controls>
+        <source src="video/ProjectGoldMinerDemo_1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <p class="meta">Unity, Mobile, Prototyping</p>
+  </template>
+
+  <!-- Personal project modal templates -->
+  <template id="asicWorkbench">
+    
+    <h3 id="modalTitle">IVE - ASIC Workbench</h3>
+    <div class="modal-content">
+      <img src="images/ASIC_Workbench.png" alt="Example screenshot" />
+    </div>
+      <p>The ASIC Workbench Interactive Training Tool Demo is a WebGL-based proof of concept designed to demonstrate how interactive 3D content can be used to train technicians on hardware teardown and maintenance procedures. Built as a lightweight, browser-based experience, the demo showcases the potential for a larger, fully featured training platform.</p>
+      <p>In its current state, the project focuses on the guided removal of a single cooling fan from an Antminer S9. Users can inspect and interact with the 3D model while following a step-by-step PDF guide that is embedded directly into the interface and dynamically highlights the current procedure step. The demo was created to clearly communicate the concept to stakeholders and illustrate how the system could scale into a complete, interactive training solution.</p>
+      <p><b>Project Year: 2024</b></p>
+    <p class="meta">Tools, Prototyping</p>
+    <p>
+      <a href="https://github.com/THET0305/ive_antminer_work_bench" target="_blank" rel="noopener">View on GitHub</a>
+    </p>
+  </template>
+
+  <template id="questBoard">
+    <h3 id="modalTitle">QuestBoard</h3>
+    <div class="modal-content">
+      <img src="images/Screenshot 2026-02-04 152858.png" alt="Example screenshot" />
+    </div>
+      <p>This project is a hands-on learning exercise focused on integrating REST APIs with Unity. It involved both building and hosting a mock backend API and developing a Unity front end to interact with it, with the project also serving as a portfolio piece.</p>
+      <p>The backend was implemented as a mock REST API using serverless functions to relay requests to a Firebase database, where quest data is stored and updated via standard HTTP methods. On the front end, a Unity-based UI retrieves quest information, displays it to the user, and allows quests to be accepted or dropped, updating their status through API calls. Development was intentionally split across different environments and tools to better mirror real-world workflows, and the project continues to serve as a practical reference for API-driven UI patterns in Unity.</p>
+      <p><b>Project Year: 2025</b></p>
+    <p class="meta">Unity, API Dev, WebApp, WebGL, Firebase</p>
+    <p>
+      <a href="https://github.com/THET0305/QuestBoard-REST" target="_blank" rel="noopener">View on GitHub</a>
+    </p>
+  </template>
+
+  <template id="siteScout">
+    <h3 id="modalTitle">SiteScout</h3>
+    <div class="modal-content">
+      <video controls>
+        <source src="video/SiteScoutDemo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+      <p>SiteScout is a personal, agentic AI-powered lead generation project designed to turn cold outreach into data-backed, visual, and persuasive sales conversations. Built with web developers and agencies in mind, it goes beyond basic lead discovery by automatically auditing business websites, identifying technical and visual issues, and generating tailored redesign pitches.</p>
+      <p>The system combines live business discovery, automated site capture, heuristic analysis, and AI-driven visual evaluation within a bounded reasoning loop. It gathers real evidence—HTML structure and full-page screenshots—scores sites based on modernization signals, and produces professional, non-aggressive outreach copy grounded in those findings. SiteScout is engineered to be fast, ethical, and respectful, with built-in rate limiting, concurrency controls, and strict adherence to robots.txt.</p>
+      <p><b>Project Year: 2025</b></p>
+    <p class="meta">Web, Utility</p>
+    <p>
+      <a href="https://github.com/THET0305/site-scout-public" target="_blank" rel="noopener">View on GitHub</a>
+    </p>
+  </template>
+
+  <template id="flaskEmotionAI">
+    <h3 id="modalTitle">Flask Emotion Detection AI</h3>
+    <div class="modal-content">
+      <img src="images/EmotionDetection.png" alt="Example screenshot" />
+    </div>
+      <p>This project was completed as one of the final assignments in the Coursera / IBM AI Developer Professional Certificate program and takes the form of a lightweight Flask-based web application for AI-driven emotion detection.</p>
+      <p>The original project scaffolding—HTML and JavaScript structure—was provided by the Coursera / IBM team. I extended the application by updating the front-end to include visual image and emoticon-based responses in addition to text output, implementing the Flask backend, and configuring the WatsonX Emotion service for API-based emotion classification. The project is hosted as a live demo and serves as a practical example of integrating cloud-based AI services into a simple web application.</p>
+      <p><b>Project Year: 2025</b></p>
+    <p class="meta">Python, Flask, ML</p>
+    <p>
+      <a href="https://github.com/THET0305/emotion_detection_flask" target="_blank" rel="noopener">View on GitHub</a>
+    </p>
+  </template>
+
+  <template id="arBowling">
+    <h3 id="modalTitle">AR Bowling</h3>
+    <div class="modal-content">
+      <video controls>
+        <source src="video/ARBowlingProject_1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+      <p>This project was completed as one of the final assignments in the Coursera / Meta AR Developer Professional Certificate program and takes the form of a Android based AR bowling game. With the swip of a finger, you throw your ball to make your strike. </p>
+      <p><b>Project Year: 2024</b></p>
+    <p class="meta">Unity, AR, ARToolkit</p>
+  </template>
+
+  <template id="arAtsteroid">
+    <h3 id="modalTitle">AR Atsteroid-Like Shooter</h3>
+    <div class="modal-content">
+      <video controls>
+        <source src="video/ARAtsteroidProject_1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+      <p>This project was completed as one of the final assignments in the Coursera / Meta AR Developer Professional Certificate program. It recreated the old game atsteroid but in 3D AR space. You place yourself between a planet and atsteroids, defending the plant it at all costs! </p>
+      <p><b>Project Year: 2024</b></p>
+    <p class="meta">Unity, AR, ARToolkit</p>
+  </template>
+
+  <script src="js/modal.js"></script>
 </body>
 
 <footer class="site-footer">
